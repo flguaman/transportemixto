@@ -188,8 +188,8 @@ const StopPopupContent = ({ stop }: { stop: Stop }) => {
   )
 }
 
-// Iconos memoizados para mejor rendimiento
-const createTerminalIcon = useCallback(() => {
+// Iconos para marcadores (funciones puras, no hooks)
+function createTerminalIcon() {
   return L.divIcon({
     html: `<div style="background: #16a34a; width: 20px; height: 20px; border-radius: 50%; border: 2px solid white; display: flex; align-items: center; justify-content: center;">
              <svg width="12" height="12" fill="white" viewBox="0 0 24 24">
@@ -200,16 +200,16 @@ const createTerminalIcon = useCallback(() => {
     iconSize: [20, 20],
     iconAnchor: [10, 10],
   })
-}, [])
+}
 
-const createStopIcon = useCallback(() => {
+function createStopIcon() {
   return L.divIcon({
     html: `<div style="background: #2563eb; width: 16px; height: 16px; border-radius: 50%; border: 2px solid white;"></div>`,
     className: "custom-div-icon",
     iconSize: [16, 16],
     iconAnchor: [8, 8],
   })
-}, [])
+}
 
 export default function InteractiveMap({
   height = "500px",

@@ -29,15 +29,16 @@ _Agrega aquí capturas o un GIF del funcionamiento (recomendado: `public/demo.gi
 ---
 
 ## ✨ Características
-- 🗺️ **Mapa interactivo** con marcadores para vehículos y paradas
-- 🚘 **Gestión de vehículos**: ver modelo, capacidad, conductor y estado
-- 🧭 **Filtros** por estado y tipo de cabina (simple/doble)
-- 📋 **Lista de paradas** con búsqueda y filtros
-- 🎨 **Sistema de temas** (Claro / Oscuro) con selector persistente
-- 🔒 **Autenticación básica** (hooks y protección de rutas)
-- 🔁 **Integración con Supabase** para persistencia y real-time updates
-- 📊 **Panel de estadísticas** (en desarrollo)
-- 📱 **Mobile-ready**: responsive y pensado para dispositivos móviles
+- 🗺️ **Mapa interactivo** con marcadores para vehículos y paradas (Leaflet + OpenStreetMap).
+- 🚘 **Gestión de vehículos**: ver modelo, capacidad, conductor, estado (activo/inactivo) y ubicación en tiempo real.
+- 🧭 **Filtros avanzados** por estado, tipo de cabina (simple/doble) y búsquedas por placa o conductor.
+- 📋 **Lista de paradas** con búsqueda, filtros y vista detallada de cada parada.
+- 🎨 **Sistema de temas** (Claro / Oscuro) con selector persistente usando `localStorage`.
+- 🔒 **Autenticación básica** (hooks, protección de rutas y redirección para usuarios no autenticados).
+- 🔁 **Integración con Supabase** para persistencia, autenticación y real-time updates de datos.
+- 📦 **Datos de ejemplo** disponibles en `data/stops.ts` y `data/azuay-stops.ts` para desarrollo local sin backend.
+- 📊 **Panel de estadísticas** (en desarrollo) que muestra métricas de uso y estado de la flota.
+- 📱 **Mobile-ready**: UI responsive, pensado para dispositivos móviles y tablets.
 
 ---
 
